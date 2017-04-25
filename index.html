@@ -35,6 +35,7 @@
  
 </head>
 
+  </head>
 <!-- NAVBAR
 ================================================== -->
   <body>
@@ -42,7 +43,7 @@
   <!-- Scroll To Top Starts and Loading -->
 <div class="scroll-top-wrapper ">
   <span class="scroll-top-inner fa-2x">
-<i class="fa fa-arrow-up" aria-hidden="true"></i>
+<i class="fa fa-arrow-up" aria-hidden="true"></i></i>
   </span>
 </div>
 <!--Scroll To Top ends -->
@@ -158,7 +159,7 @@
     <div class="container marketing" id="about">
 
       <!-- Three columns of text below the carousel -->
-      <div class="row" id="about">
+      <div class="row">
         <div class="col-lg-4">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
           <h2>Heading</h2>
@@ -184,7 +185,7 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette" id="contact">
+      <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
@@ -235,21 +236,28 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-<script src="jquery.min.js"></script>
-<script>
-$(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
-        if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-        }
-    });
-});
-</script>
-  <!-- Ends -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- Scroll-to Top -->
+<!-- Loader -->
+  <!-- jQuery Plugin -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+    <!-- Preloader -->
+    <script type="text/javascript">
+        //<![CDATA[
+            $(window).on('load', function() { // makes sure the whole site is loaded 
+                $('#status').fadeOut(); // will first fade out the loading animation 
+                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+                $('body').delay(350).css({'overflow':'visible'});
+              })
+        //]]>
+    </script>
 
 </html>
