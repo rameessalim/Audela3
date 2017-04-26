@@ -5,7 +5,7 @@ $('#mainNav').affix({
   }
 })
  
-
+/*Scroll to Top Starts*/
 $(function(){
  
 	$(document).on( 'scroll', function(){
@@ -27,4 +27,12 @@ function scrollToTop() {
 	offsetTop = offset.top;
 	$('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
 }
+/*Scroll to Top ends*/
 
+/* Navbar active Fix */
+$(".nav a").on("click", function(){
+   $(".nav").find(".active").removeClass("active");
+   $(this).parent().addClass("active");
+});
+
+/*Fix Ends */
